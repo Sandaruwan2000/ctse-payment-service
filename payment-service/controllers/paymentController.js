@@ -66,6 +66,7 @@ const processPayment = async (req, res) => {
       success: true,
       message: payment.paymentStatus === 'paid' ? 'Payment processed successfully' : 'Payment failed',
       payment,
+      orderStatus: orderData.orderStatus,
     });
   } catch (error) {
     console.error('Process Payment Error:', error.message);
