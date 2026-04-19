@@ -9,7 +9,7 @@ const { protect, adminOnly } = require('../middleware/authMiddleware');
 
 const router = express.Router();
 
-// POST /payments
+// POST /payment
 router.post(
   '/',
   protect,
